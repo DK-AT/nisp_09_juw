@@ -1,0 +1,130 @@
+@page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            background-color: #0b011d; /* Deep midnight purple */
+        }
+        .container {
+            width: 100%;
+            height: 297mm;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0b011d 0%, #1a0b35 100%);
+        }
+        /* Neon accents and background elements */
+        .neon-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 1;
+        }
+        .circle-1 { width: 400px; height: 400px; background: rgba(0, 255, 255, 0.15); top: -100px; right: -100px; }
+        .circle-2 { width: 300px; height: 300px; background: rgba(255, 0, 255, 0.15); bottom: 100px; left: -100px; }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 40px;
+            text-align: center;
+        }
+        .header {
+            margin-top: 60px;
+        }
+        .university-logo {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            border: 2px solid #00ffff;
+            display: inline-block;
+            padding: 10px 20px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+        h1 {
+            font-size: 52pt;
+            margin: 20px 0;
+            text-transform: uppercase;
+            line-height: 1;
+            background: linear-gradient(to right, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+        }
+        .subtitle {
+            font-size: 18pt;
+            color: #e0e0e0;
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 600px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .date {
+            font-size: 24pt;
+            color: #ff00ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .location {
+            font-size: 14pt;
+            color: #00ffff;
+            margin-bottom: 0;
+        }
+        .line-up {
+            margin: 50px 0;
+        }
+        .line-up h2 {
+            font-size: 22pt;
+            border-bottom: 1px solid #ff00ff;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .artist-grid {
+            display: table;
+            width: 100%;
+            border-spacing: 20px;
+        }
+        .artist {
+            display: table-cell;
+            width: 33%;
+            background: rgba(0, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 20px 50px;
+            background: #ff00ff;
+            color: white;
+            text-decoration: none;
+            font-size: 16pt;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+            text-transform: uppercase;
+        }
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+            font-size: 10pt;
+            color: rgba(255, 255, 255, 0.5);
+        }
